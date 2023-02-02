@@ -24,6 +24,7 @@ const useStyles = makeStyles((theme) => ({
 
 function Week1(){
     const classes = useStyles();
+    
     return  <>
         <section className = {`${classes.textGrid} ${classes.margin} ${classes.centered}`}>
         <h1 className={classes.centered}>Final Project Proposal</h1>
@@ -46,6 +47,8 @@ function Week1(){
         <p>
             There are a few different mechanisms for incentivizing me to study I would like to test out or combine. 
         </p>
+        <section className = {classes.textGrid}>
+        <img className = {classes.alignLeft} src = {require("/Users/robertmccarthy/Documents/GitHub/ps70/src/yelling.png")} alt = {'yelling box'} style = {{height: '350px'}}></img>
         <ul>
             <li>
                 Option One: Insults. I think it would be funny if I had an box that would yell insults at me when I try to take my phone during break
@@ -61,6 +64,7 @@ function Week1(){
                 that gets bigger and more accessories the more sessions you complete and dies if you mess up enough.
             </li>
         </ul>
+        </section>
         </div>
         </section>
     </> 
