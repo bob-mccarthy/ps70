@@ -28,7 +28,7 @@ function Navbar () {
         <AppBar >
             <Toolbar className = {classes.toolbar}>
                 <Typography variant = "h4" >
-                    <Link to = "/" className = {classes.link}>
+                    <Link to = "/ps70" className = {classes.link}>
                         PS70
                     </Link>
                 </Typography>
@@ -43,12 +43,12 @@ function Navbar () {
                 </Typography>
                 <Stack direction = "row" spacing = {2}>
                     <Button>
-                        <Link to = "/" className = {classes.link}>
+                        <Link to = "/ps70" className = {classes.link}>
                             Home
                         </Link>
                     </Button>
                     <Button>
-                        <Link to = "/about" className = {classes.link}>
+                        <Link to = "/ps70/about" className = {classes.link}>
                             About
                         </Link>
                     </Button>
