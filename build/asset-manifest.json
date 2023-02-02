@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/ps70/static/css/main.e6c13ad2.css",
+    "main.js": "/ps70/static/js/main.21406c8c.js",
+    "index.html": "/ps70/index.html",
+    "main.e6c13ad2.css.map": "/ps70/static/css/main.e6c13ad2.css.map",
+    "main.21406c8c.js.map": "/ps70/static/js/main.21406c8c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.21406c8c.js"
+  ]
+}
