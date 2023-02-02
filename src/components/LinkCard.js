@@ -38,13 +38,13 @@ const useStyles = makeStyles((theme) => ({
 function LinkCard(props){
     const classes = useStyles()
     // return <img className = {classes.temp} src = {props.imgPath} alt = {props.alt}></img>
-    // console.log(props.imgPath)
-    console.log(props)
+    console.log(props.imgPath === "/Users/robertmccarthy/Documents/GitHub/ps70/src/books.jpeg")
+    const newPath = "/Users/robertmccarthy/Documents/GitHub/ps70/src/books.jpeg"
+
     return (
     <Link className = {`${(props.disabled) ? classes.disabled : '' }`} to = {props.link} style = {{textDecoration: 'none', color: 'white'}}>    
     <div className = {classes.fillContainer} style = {{background: 'yellow', alignContent: 'center', backgroundColor: 'white', height: '450px'}}>
-        
-     <img  className = {classes.fillImg} src = {props.imgPath} alt = {props.alt}></img>
+     <img  className = {classes.fillImg} src = {props.img} alt = {props.alt}></img>
      <div className= {classes.title}> {props.title}</div>
     </div>
     </Link>

@@ -18,16 +18,16 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 
-const cards = [{imgPath: "/books.jpeg", alt: "Money Cat", link: "/week1", disabled:false, title: "Week 1"}, 
-{imgPath: "/github-logo.png", alt: "TBD", link: "/week2", disabled:true, title: "Week 2"},
-{imgPath: "/github-logo.png", alt: "TBD", link: "/week3", disabled:true, title: "Week 3"},
-{imgPath: "/github-logo.png", alt: "TBD", link: "/week4", disabled:true, title: "Week 4"},
-{imgPath: "/github-logo.png", alt: "TBD", link: "/week5", disabled:true, title: "Week 5"},
-{imgPath: "/github-logo.png", alt: "TBD", link: "/week6", disabled:true, title: "Week 6"},
-{imgPath: "/github-logo.png", alt: "TBD", link: "/week7", disabled:true, title: "Week 7"},
-{imgPath: "/github-logo.png", alt: "TBD", link: "/week8", disabled:true, title: "Week 8"},
-{imgPath: "/github-logo.png", alt: "TBD", link: "/week9", disabled:true, title: "Week 9"},
-{imgPath: "/github-logo.png", alt: "TBD", link: "/week10", disabled:true, title: "Week 10"}]
+const cards = [{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/books.jpeg"), alt: "Money Cat", link: "/week1", disabled:false, title: "Week 1"}, 
+{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/week2", disabled:true, title: "Week 2"},
+{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/week3", disabled:true, title: "Week 3"},
+{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/week4", disabled:true, title: "Week 4"},
+{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/week5", disabled:true, title: "Week 5"},
+{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/week6", disabled:true, title: "Week 6"},
+{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/week7", disabled:true, title: "Week 7"},
+{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/week8", disabled:true, title: "Week 8"},
+{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/week9", disabled:true, title: "Week 9"},
+{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/week10", disabled:true, title: "Week 10"}]
 
 function Home(){
     const classes = useStyles()

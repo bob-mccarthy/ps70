@@ -33,7 +33,7 @@ function About() {
         <h1 className={classes.centered}>ABOUT ME</h1>
         </section>
         <section className = {`${classes.textGrid} ${classes.margin}`}>
-        <img className = {classes.alignLeft} src = "./bobby.JPG" alt = "Bobby McCarthy" width = "300px"></img>
+        <img className = {classes.alignLeft} src = {require('/Users/robertmccarthy/Documents/GitHub/ps70/src/bobby.JPG')} alt = "Bobby McCarthy" width = "300px"></img>
         <div>
         <p className = {classes.margin}>
             Hello my name is Bobby, I am a senior in Currier and currently am studying Computer Science. 
