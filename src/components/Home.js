@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 
 const cards = [{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/books.jpeg"), alt: "Money Cat", link: "/ps70/week1", disabled:false, title: "Week 1"}, 
 {img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/cardboard sphere.png"), alt: "TBD", link: "/ps70/week2", disabled:false, title: "Week 2"},
-{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/ps70/week3", disabled:true, title: "Week 3"},
+{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/ps70/week3", disabled:false, title: "Week 3"},
 {img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/ps70/week4", disabled:true, title: "Week 4"},
 {img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/ps70/week5", disabled:true, title: "Week 5"},
 {img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/ps70/week6", disabled:true, title: "Week 6"},
