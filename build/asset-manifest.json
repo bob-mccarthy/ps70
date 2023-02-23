@@ -1,8 +1,10 @@
 {
   "files": {
-    "main.css": "/ps70/static/css/main.e6c13ad2.css",
-    "main.js": "/ps70/static/js/main.e78ab19f.js",
+    "main.css": "/ps70/static/css/main.1c5b0178.css",
+    "main.js": "/ps70/static/js/main.1ec03a87.js",
+    "static/media/ input and buzzer.png": "/ps70/static/media/ input and buzzer.44928d130dd3b43804e7.png",
     "static/media/cardboard sphere.png": "/ps70/static/media/cardboard sphere.ab82c5fc08b9a6827e0b.png",
+    "static/media/demo.mov": "/ps70/static/media/demo.cfe4d11a9fc19c1d3f13.mov",
     "static/media/too tight.png": "/ps70/static/media/too tight.258ca80ab07fc20fc09d.png",
     "static/media/gets caught.png": "/ps70/static/media/gets caught.69d2d80a57b70ba475fb.png",
     "static/media/spacers.png": "/ps70/static/media/spacers.7be2182fdbb6c940a3a5.png",
@@ -11,15 +13,16 @@
     "static/media/assembly view 3.png": "/ps70/static/media/assembly view 3.e5035b1356cc975d4d8c.png",
     "static/media/assembly view 1.png": "/ps70/static/media/assembly view 1.cf5820d228a761cd8d0b.png",
     "static/media/books.jpeg": "/ps70/static/media/books.d2a7a2865b205a8e1463.jpeg",
+    "static/media/Code.png": "/ps70/static/media/Code.675a925f599a79670cae.png",
     "static/media/tut 1.png": "/ps70/static/media/tut 1.0093f7200ca972efefcc.png",
     "static/media/tut 2.png": "/ps70/static/media/tut 2.3049761a02e5a8d54752.png",
     "static/media/github-logo.png": "/ps70/static/media/github-logo.abb5df5cb6033db6a886.png",
     "index.html": "/ps70/index.html",
-    "main.e6c13ad2.css.map": "/ps70/static/css/main.e6c13ad2.css.map",
-    "main.e78ab19f.js.map": "/ps70/static/js/main.e78ab19f.js.map"
+    "main.1c5b0178.css.map": "/ps70/static/css/main.1c5b0178.css.map",
+    "main.1ec03a87.js.map": "/ps70/static/js/main.1ec03a87.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.e78ab19f.js"
+    "static/css/main.1c5b0178.css",
+    "static/js/main.1ec03a87.js"
   ]
 }

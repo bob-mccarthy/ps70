@@ -1,13 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import {AppBar,
-        Toolbar,
-        IconButton,
-        Typography,
-        Stack,
-        Button
-    } from '@mui/material';
 
+import "../index.css"
 import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -25,37 +19,16 @@ function Navbar () {
     const classes = useStyles();
     return (
         <>
-        <AppBar >
-            <Toolbar className = {classes.toolbar}>
-                <Typography variant = "h4" >
-                    <Link to = "/ps70" className = {classes.link}>
-                        PS70
-                    </Link>
-                </Typography>
-                <IconButton size = 'large' edge = 'start' color = 'inherit' aria-label = 'logo'>
-                {/* <img
-                src="https://i.imgur.com/MK3eW3As.jpg"
-                alt="Katherine Johnson"
-                /> */}
-                </IconButton>
-                <Typography variant = "h6" component ="div" sx = {{flexGrow:1}}>
-                    Bobby McCarthy
-                </Typography>
-                <Stack direction = "row" spacing = {2}>
-                    <Button>
-                        <Link to = "/ps70" className = {classes.link}>
-                            Home
-                        </Link>
-                    </Button>
-                    <Button>
-                        <Link to = "/ps70/about" className = {classes.link}>
-                            About
-                        </Link>
-                    </Button>
-                </Stack>
-            </Toolbar>    
-        </AppBar>
-        <Toolbar />
+        <ul className='navbar'>
+            <li className='navEl'>
+                <Link to = "/ps70"> Home</Link>
+            </li>
+            <li className='navEl'>
+                <Link to = "/ps70/about"> About</Link>
+            </li>
+        </ul>
+
+       
         </>
         
     )
