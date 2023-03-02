@@ -8,6 +8,7 @@ import Week1 from './components/Week1';
 import Week2 from './components/Week2';
 import Week3 from './components/Week3';
 import Week4 from './components/Week4';
+import Week5 from './components/Week5';
 
 function App() {
   const [visible, setVisible] = useState(true)
@@ -20,17 +21,21 @@ function App() {
     <>
       <Navbar />
       <section className='container'>
-        <section style= {{minWidth: '17em'}}>
+        <section style= {{minWidth: '17em', height: '100vh'}}>
         <ul className='sideNavBar'>
             <li>
               PS70: Intro to Digital Fabrication
             </li>
-            <li>
-              <Link to = "/ps70"> Home</Link>
-            </li>
-            <li>
-              <Link to = "/ps70/about"> About</Link>
-            </li>
+            <Link className='sideNavEl' to = "/ps70">
+              <li>
+                Home
+              </li>
+            </Link>
+            <Link className='sideNavEl' to = "/ps70/about">
+              <li>
+                About
+              </li>
+            </Link>
             <li >
              <div onClick={toggleVisible} style= {{cursor: 'pointer', display: 'flex'}} >Working Log    </div> 
              <i className= {`arrow ${visible ? 'down' : 'right'}`}></i> 
@@ -38,18 +43,34 @@ function App() {
             {
              visible && 
              <>
-            <li className='dropdownLink' > 
-              <Link to = "/ps70/week1"> Week 1</Link>
+            <Link className = 'sideNavEl' to = "/ps70/week1">
+            <li className='dropdownLink'> 
+               Week 1
             </li>
+            </Link>
+            <Link className='sideNavEl' to = "/ps70/week2"> 
             <li className='dropdownLink'>
-              <Link to = "/ps70/week2"> Week 2</Link>
+              
+              Week 2
+              
+
             </li>
+            </Link>
+            <Link className='sideNavEl' to = "/ps70/week3">
+              <li className='dropdownLink'>
+                Week 3
+              </li>
+            </Link>
+            <Link className='sideNavEl' to = "/ps70/week4">
             <li className='dropdownLink'>
-              <Link to = "/ps70/week3"> Week 3</Link>
+               Week 4
             </li>
+            </Link>
+            <Link className='sideNavEl' to = "/ps70/week5">
             <li className='dropdownLink'>
-              <Link to = "/ps70/week4"> Week 4</Link>
+               Week 5
             </li>
+            </Link>
             </>
             }
         </ul>
@@ -61,6 +82,7 @@ function App() {
             <Route path = "/ps70/week2" element = {<Week2 />} />
             <Route path = "/ps70/week3" element = {<Week3 />} />
             <Route path = "/ps70/week4" element = {<Week4 />} />
+            <Route path = "/ps70/week5" element = {<Week5 />} />
           </Routes>
       </section>
     </>

@@ -33,13 +33,14 @@
 
 .sideNavBar {
   border-right-style: solid;
+  height: 99vh;
 }
 
 .sideNavBar li {
   list-style-type: none;
 }
 
-.sideNavBar li a{
+.sideNavEl {
   text-decoration: none;
   color: black;
   padding-top: 10em;
