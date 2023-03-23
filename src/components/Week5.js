@@ -3,10 +3,26 @@ import React from "react";
 function Week5(){
     return <section style = {{padding : '0.5em 1em 1em 1em'}}>
             <h2>Week 5</h2>
+            <p>First I printed out a pyramid to get used to working with 3d printing, my small print was originally twice the size and it was going to be a 20 minute print, but 
+            then when I shrunk it down and changed the print quality is cut over 10 minutes on the print time which helped me realized just how drastically size and print quality
+            affect print time</p>
             <img src = {require("/Users/robertmccarthy/Documents/GitHub/ps70/src/pyramid print.png")} alt = {'yelling box'} style = {{height: '350px'}}></img>
+            <p> For my other 3D print I wanted to make a ball bearing. I modeled a ball bearing in fusion 360. In order to model the ball bearing I made a circle
+                with a rectangle on top and bottom of that circle, when I revolved these rectangles about the x axis I got the two rings of the bearing. Then revolved the 
+                circle to get a sphere and then created a circular pattern to get the ball bearing</p>
+            <img src = {require("/Users/robertmccarthy/Documents/GitHub/ps70/src/ball bearing design.png")} alt = {'yelling box'} style = {{height: '350px'}}></img>
+            <br></br>
+            <a href = {require('/Users/robertmccarthy/Documents/GitHub/ps70/src/Ball Bearing v4.stl')} download>Ball Bearing Download</a>
+            <p>
+                However, issues that I have had with Ball Bearings were first I made the spheres to big and the print quality low this meant that the spheres were stuck and 
+                would not roll around in the rings. So I then shrunk the size of hte balls and improved the print quality, but this had issues as well as I had go in the opposite 
+                direction and there was too much space and the balls eventually fell out. So finally in the end I tweaked the results and made the spheres a little bigger which solved 
+                the problem and helped me land on the design in the stl and the design in the last pic
+            </p>
             <img src = {require("/Users/robertmccarthy/Documents/GitHub/ps70/src/scaffolding.png")} alt = {'yelling box'} style = {{height: '350px'}}></img>
             <img src = {require("/Users/robertmccarthy/Documents/GitHub/ps70/src/final print.png")} alt = {'yelling box'} style = {{height: '350px'}}></img>
             <img src = {require("/Users/robertmccarthy/Documents/GitHub/ps70/src/first product.png")} alt = {'yelling box'} style = {{height: '350px'}}></img>
+            
             <h2>Final Project</h2>
             <p>I am still am not completely finalized on the direction I was to take the final project in
                 but what I do know is that the core of it will be a box which displays a timer and detects if my phone

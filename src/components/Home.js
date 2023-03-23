@@ -24,7 +24,7 @@ const cards = [{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/bo
 {img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/ps70/week4", disabled:false, title: "Week 4"},
 {img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/ps70/week5", disabled:false, title: "Week 5"},
 {img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/ps70/week6", disabled:true, title: "Week 6"},
-{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/ps70/week7", disabled:true, title: "Week 7"},
+{img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/ps70/week7", disabled:false, title: "Week 7"},
 {img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/ps70/week8", disabled:true, title: "Week 8"},
 {img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/ps70/week9", disabled:true, title: "Week 9"},
 {img: require("/Users/robertmccarthy/Documents/GitHub/ps70/src/github-logo.png"), alt: "TBD", link: "/ps70/week10", disabled:true, title: "Week 10"}]
