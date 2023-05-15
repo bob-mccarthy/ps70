@@ -10,6 +10,7 @@ import Week3 from './components/Week3';
 import Week4 from './components/Week4';
 import Week5 from './components/Week5';
 import Week7 from './components/Week7';
+import Week8 from './components/Week8';
 
 function App() {
   const [visible, setVisible] = useState(true)
@@ -82,6 +83,11 @@ function App() {
                Week 7
             </li>
             </Link>
+            <Link className='sideNavEl' to = "/ps70/week8">
+            <li className='dropdownLink'>
+               Week 8
+            </li>
+            </Link>
             </>
             }
         </ul>
@@ -96,6 +102,7 @@ function App() {
             <Route path = "/ps70/week5" element = {<Week5 />} />
             {/* <Route path = "/ps70/week6" element = {<Week6 />} /> */}
             <Route path = "/ps70/week7" element = {<Week7 />} />
+            <Route path = "/ps70/week8" element = {<Week8 />} />
           </Routes>
       </section>
     </>

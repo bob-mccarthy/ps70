@@ -1,0 +1,868 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/src/prettify.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/src/prettify.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre code').forEach((el) => {
+          hljs.highlightElement(el);
+        });
+      });</script>
+    <link rel="stylesheet" href="https://pygments.org/static/css/default.css">
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS70 Bobby</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <script>
+        function navigate() {
+            var selectElement = document.getElementById("pageSelect");
+            var selectedValue = selectElement.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+    <script>
+      window.onload = function() {
+          PR.prettyPrint();
+      };
+  </script>
+</head>
+<body>
+    <div class = "navbar">
+        <img src = "py-logo.svg" alt = "python logo"></img>
+        <a href = "index.html" style = "text-decoration: none; font-size: 14px;">Phys-Sci »</a>
+        <select style="width: 7%;">
+            <option> English </option>
+            <option disabled> I don't know other languages :(</option>
+        </select>
+        <select style="width: 6%;" id="pageSelect" onchange="navigate()">
+            <option value = "index.html"> Home Page</option>
+            <option value = "week1.html"> Week 1</option>
+            <option value = "week2.html"> Week 2</option>
+            <option value = "week3.html"> Week 3</option>
+            <option value = "week4.html"> Week 4</option>
+            <option value = "week5.html"> Week 5</option>
+            <option value = "week6.html"> Week 6</option>
+            <option value = "week7.html"> Week 7</option>
+            <option value = "week8.html"> Week 8</option>
+            <option value = "https://ctian5136.github.io/ps70/html/weeks/week9.html"> Week 9</option>
+            <option value = "https://geometrikz.github.io/PS70/blog/week_10/"> Week 10</option>
+            <option value = "finalProject.html"> Final Project</option>
+        </select>
+        <p>70.0.1 Documentation »</p>
+    </div>
+    <div class = "grid">
+        <div class = "sidenav">
+            <p>Download</p>
+            <p>Docs by Week</p>
+            <ul class = "weekLinks">
+                <li>
+                    <a href = "week1.html"> Week 1: Intro</a>
+                </li>
+                <li>
+                    <a href = "week2.html"> Week 2: 2D Design</a>
+                </li>
+                <li>
+                    <a href = "week3.html"> Week 3: Hand tools</a>
+                </li>
+                <li>
+                    <a href = "week4.html"> Week 4: Microcontrollers</a>
+                </li>
+                <li>
+                    <a href = "week5.html"> Week 5: 3D Design</a>
+                </li>
+                <li>
+                    <a href = "week6.html"> Week 6: Input Devices</a>
+                </li>
+                <li>
+                    <a href = "week7.html"> Week 7: Output Devices</a>
+                </li>
+                <li>
+                    <a href = "week8.html"> Week 8: Mill, Mold & Cast</a>
+                </li>
+                <li>
+                    <a href = "https://ctian5136.github.io/ps70/html/weeks/week9.html"> Week 9: Internet of Things</a>
+                </li>
+                <li>
+                    <a href = "https://geometrikz.github.io/PS70/blog/week_10/"> Week 10: Machine Building</a>
+                </li>
+                <li>
+                    <a href = "finalProject.html"> Final Project: Insult Robot</a>
+                </li>
+            </ul>      
+        </div>
+        <div class="main-content">
+            <video  style="width:50vw;" controls>
+                <source src = "finalProjectAssets/Insult-Robot.mp4", type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            <h3>ESP32S2 Code: Study Timer Logic and Display</h3>
+            <nav style = "width: 50vw;">
+            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-main-tab" data-bs-toggle="tab" data-bs-target="#nav-main" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Main.ino</button>
+                <button class="nav-link" id="nav-studytimer-h-tab" data-bs-toggle="tab" data-bs-target="#nav-studytimer-h" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">StudyTimer.h</button>
+                <button class="nav-link" id="nav-studytimer-cpp-tab" data-bs-toggle="tab" data-bs-target="#nav-studytimer-cpp" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">StudyTimer.cpp</button>
+                <button class="nav-link" id="nav-phonedetector-h-tab" data-bs-toggle="tab" data-bs-target="#nav-phonedetector-h" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">PhoneDetector.h</button>
+                <button class="nav-link" id="nav-phonedetector-cpp-tab" data-bs-toggle="tab" data-bs-target="#nav-phonedetector-cpp" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">PhoneDetector.cpp</button>
+                <button class="nav-link" id="nav-timeinterface-h-tab" data-bs-toggle="tab" data-bs-target="#nav-timeinterface-h" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">TimeInterface.h</button>
+                <button class="nav-link" id="nav-timeinterface-cpp-tab" data-bs-toggle="tab" data-bs-target="#nav-timeinterface-cpp" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">TimeInterface.cpp</button>
+                <button class="nav-link" id="nav-rotaryencoder-ino-tab" data-bs-toggle="tab" data-bs-target="#nav-rotaryencoder-ino" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">RotaryEncorder.ino</button>
+                <button class="nav-link" id="nav-inputscreens-ino-tab" data-bs-toggle="tab" data-bs-target="#nav-inputscreens-ino" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">InputScreens.ino</button>
+                <button class="nav-link" id="nav-time-h-tab" data-bs-toggle="tab" data-bs-target="#nav-time-h" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Time.h</button>
+            </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-main" role="tabpanel" aria-labelledby="nav-main-tab">
+                <pre class="prettyprint pre" >
+                    <code class="language-cpp code" >
+                        #include "StudyTimer.h"
+                        #include "PhoneDetector.h"
+                        #include <LiquidCrystal_I2C.h>
+                        #include "AiEsp32RotaryEncoder.h"
+                        #include "Arduino.h"
+                        #include "Time.h"
+                        #include <esp_now.h>
+                        #include <WiFi.h>
+                        #include <esp_wifi.h> // only for esp_wifi_set_channel()
+
+                        // Global copy of slave
+                        esp_now_peer_info_t slave;
+
+                        LiquidCrystal_I2C lcd(0x27,16,2);  // set the LCD address to 0x3F for a 16 chars and 2 line display
+                        # define SDApin 20
+                        # define SCLpin 21
+                        #define ROTARY_ENCODER_A_PIN 7
+                        #define ROTARY_ENCODER_B_PIN 6
+                        #define ROTARY_ENCODER_BUTTON_PIN 5
+                        #define ROTARY_ENCODER_VCC_PIN -1
+                        #define ROTARY_ENCODER_STEPS 4
+                        #define CHANNEL 1
+                        #define PRINTSCANRESULTS 0
+                        #define DELETEBEFOREPAIR 0
+
+                        //instead of changing here, rather change numbers above
+                        AiEsp32RotaryEncoder rotaryEncoder = AiEsp32RotaryEncoder(ROTARY_ENCODER_A_PIN, ROTARY_ENCODER_B_PIN, ROTARY_ENCODER_BUTTON_PIN, ROTARY_ENCODER_VCC_PIN, ROTARY_ENCODER_STEPS);
+                        void IRAM_ATTR readEncoderISR();
+
+                        struct time study = {15, 0};
+                        struct time relax = {5, 0};
+                        StudyTimer timer;
+                        PhoneDetector detector(17);
+                        bool procrastinating;
+                        bool started = false;
+                        int seconds = 0;
+                        int pastSeconds = -1;
+                        String pastMessage = "";
+                        String message = "";
+                        // int clicks = 0;
+                        int prevRotVal = 0;
+                        int currRotVal = 0;
+                        int value = 0;
+                        int prevValue = 0;
+                        int up = false;
+
+                        void write(const char* message, int row){
+                        // lcd.clear();
+                        lcd.setCursor(0,row);   //Set cursor to character 2 on line 0
+                        lcd.print(message);
+
+                        }
+
+                        void playSound(uint8_t play){
+                        // In the loop we scan for slave
+                        while(ScanForSlave()){
+                            // If Slave is found, it would be populate in `slave` variable
+                        // We will check if `slave` is defined and then we proceed further
+                        if (slave.channel == CHANNEL) { // check if slave channel is defined
+                            // `slave` is defined
+                            // Add slave as peer if it has not been added already
+                            bool isPaired = manageSlave();
+                            if (isPaired) {
+                            // pair success or already paired
+                            // Send data to device
+                            sendData(play);
+                            } else {
+                            // slave pair failed
+                            Serial.println("Slave pair failed!");
+                            }
+                        }
+                        }
+
+                        }
+
+                        void setFinalTime(struct time &currTime){
+                        int clicks = 0;
+                        while(clicks != 2){
+                            value = rotary_loop();
+                            
+                            // if (value != -1){
+                            //   message = (String) value;
+                            // }
+                            if(prevValue != value && value != -1 && value != -2){
+                            
+                            // Serial.println((String )prevValue + ", " + value);
+                            up = value > prevValue || (value < prevValue && value == 0);
+                            setTime(up,currTime,clicks == 0);
+                            message = printTime(currTime.seconds, currTime.minutes);
+                            // pastMessage = message;
+                            // Serial.println(message.c_str());
+                            write(message.c_str(), 1);
+                            prevValue = value;
+                            }
+                            else if (value == -2){
+                            clicks += 1;
+                            } 
+                        }
+                        }
+
+                        void setup() {
+
+                        Serial.begin(115200);
+                        //we must initialize rotary encoder
+                        rotaryEncoder.begin();
+                        rotaryEncoder.setup(readEncoderISR);
+                        //set boundaries and if values should cycle or not
+                        //in this example we will set possible values between 0 and 1000;
+                        bool circleValues = true;
+                        rotaryEncoder.setBoundaries(0, 1000, circleValues); //minValue, maxValue, circleValues true|false (when max go to min and vice versa)
+                        rotaryEncoder.setAcceleration(0); //or set the value - larger number = more accelearation; 0 or 1 means disabled acceleration
+                        procrastinating = false;
+                        Wire.begin(SDApin, SCLpin);
+                        pinMode(40, OUTPUT);
+                        lcd.init();
+                        lcd.clear();         
+                        lcd.backlight(); 
+                        write("Study Time:", 0);
+                        write("15:00", 1);
+                        setFinalTime(study);
+                        lcd.clear();
+                        write("Relax Time:", 0);
+                        write("05:00", 1);
+                        setFinalTime(relax);
+                        WiFi.mode(WIFI_STA);
+                        esp_wifi_set_channel(CHANNEL, WIFI_SECOND_CHAN_NONE);
+                        InitESPNow();
+                        // Once ESPNow is successfully Init, we will register for Send CB to
+                        // get the status of Trasnmitted packet
+                        esp_now_register_send_cb(OnDataSent);
+
+                        // while(clicks != 2){
+                            
+                        //   value = rotary_loop();
+                            
+                        //   // if (value != -1){
+                        //   //   message = (String) value;
+                        //   // }
+                        //   if(prevValue != value && value != -1 && value != -2){
+                            
+                        //     Serial.println((String )prevValue + ", " + value);
+                        //     up = value > prevValue || (value < prevValue && value == 0);
+                        //     setTime(up,study,clicks == 0);
+                        //     message = printTime(study.seconds, study.minutes);
+                        //     // pastMessage = message;
+                        //     // Serial.println(message.c_str());
+                        //     write(message.c_str(), 1);
+                        //     prevValue = value;
+                        //   }
+                        //   else if (value == -2){
+                        //     clicks += 1;
+                        //   }
+                            
+                        // }
+                        
+                        lcd.clear();
+                        message = "";
+                        timer = StudyTimer(study.minutes*60 + study.seconds, relax.minutes * 60 + relax.seconds, 2);
+
+                        }
+
+                        void loop() {
+                        if (timer.getTime() != seconds){
+                            seconds = timer.getTime();
+                            message = ((String) (timer.getIsStudying()? "Study" : "Relax") + " " + seconds);
+                        }
+                        
+                        if (!procrastinating && !detector.detect() && timer.getIsStudying()){
+                            timer.pause();
+                            Serial.println("1");
+                            // playSound(1);
+                            procrastinating = true;
+                            message = "Put phone back";
+                            tone(40, 1000);
+                        }
+                        if (procrastinating && detector.detect() && timer.getIsStudying()){
+                            timer.unpause();
+                            Serial.println("0");
+                            // playSound(0);
+                            procrastinating = false;
+                            noTone(40);
+                            message = ((String) (timer.getIsStudying()? "Study" : "Relax") + " " + seconds);
+                        }
+
+                        if (!pastMessage.equals(message)){
+                            if (pastMessage.length() > message.length()){
+                            lcd.clear();
+                            }
+                            pastMessage = message;
+                            write(message.c_str(), 0);
+                        }
+                        
+                        
+                        
+                        }
+
+                    </code>
+                </pre> 
+            </div>
+            <div class="tab-pane fade" id="nav-studytimer-h" role="tabpanel" aria-labelledby="nav-studytimer-h-tab">
+                <pre class="prettyprint pre" >
+                    <code class="language-cpp code" >
+                        #ifndef StudyTimer_h
+                        #define StudyTimer_h
+
+                        #include <Arduino.h>
+
+                        class StudyTimer{
+                        private:
+                            int id;
+                            int studyDuration;
+                            int leisureDuration;
+                            int currDuration;
+                            int numRounds;
+                            int currRounds;
+                            bool isStudying;
+                            bool paused;
+                            uint64_t startTime;
+                            uint64_t currTime;
+
+                        public:
+                            StudyTimer();
+                            StudyTimer(int studyTime, int leisureTime, int rounds);
+                            int getTime();
+                            void restart();
+                            void changeMode();
+                            void pause();
+                            void unpause();
+                            bool getIsStudying();
+                            void playSound(bool isStudying);
+                            int getId();
+
+                        };
+
+                        #endif
+                    </code>
+                </pre> 
+            </div>
+            <div class="tab-pane fade" id="nav-studytimer-cpp" role="tabpanel" aria-labelledby="nav-studytimer-cpp-tab">
+                <pre class="prettyprint pre" >
+                    <code class="language-cpp code" >
+                        #include "StudyTimer.h"
+                        StudyTimer::StudyTimer(){
+                        
+                        }
+                        StudyTimer::StudyTimer(int studyTime, int leisureTime, int rounds){
+
+                        studyDuration = studyTime;
+                        leisureDuration = leisureTime;
+                        currDuration = studyDuration;
+                        numRounds = rounds;
+                        currRounds = 0;
+                        currTime = 0;
+                        startTime = esp_timer_get_time();
+                        // Also an option for later if you I do not want to immediately start the timer on intialization it we can set the timer to paused
+                        paused = false;
+                        isStudying = true;
+                        }
+
+                        // return current time elapsed of current session in seconds
+                        int StudyTimer::getTime(){
+                        if(!paused){
+                            currTime += esp_timer_get_time() - startTime;
+                            startTime = esp_timer_get_time();
+                        }
+                        if((currTime / 1000000) >= currDuration){
+                            // Serial.println((String)"Conditional: " + ((currTime / 1000000) >= currDuration));
+                            // Serial.println((String) "currTime: "+ currTime+ " currTime / 100000: " + currTime / 1000000 + " and currDuration " + currDuration);
+                            StudyTimer::changeMode();    
+                        }
+                        return currTime / 1000000;
+                        }
+
+
+
+
+
+                        void StudyTimer::restart(){
+                        currTime = 0;
+                        startTime = esp_timer_get_time();
+                        }
+
+                        void StudyTimer::changeMode(){
+                        /*
+                        check if finshing study session 
+                        and play a sound of give some kind of signal to
+                        let the user know they have finsihed
+                        */
+                        isStudying = !isStudying;
+                        currDuration = isStudying ? studyDuration : leisureDuration;
+                        StudyTimer::restart();
+                        }
+
+                        void StudyTimer::pause(){
+                        // Serial.println((String)"We are paused on this ID: " + id);
+                        if (!paused){
+                            paused = true;
+                            currTime += esp_timer_get_time() - startTime;
+                        }
+                        }
+
+                        void StudyTimer::unpause(){
+                        if (paused){
+                            paused = false;
+                            startTime = esp_timer_get_time();
+                        }
+                        }
+
+                        bool StudyTimer::getIsStudying(){
+                        return isStudying;
+                        }
+
+                        void StudyTimer::playSound(bool isStudying){
+
+                        }
+
+                        int StudyTimer::getId(){
+                        return id;
+                        }
+
+
+
+                    </code>
+                </pre> 
+            </div>
+            <div class="tab-pane fade" id="nav-phonedetector-h" role="tabpanel" aria-labelledby="nav-phonedetector-h-tab">
+                <pre class="prettyprint pre" >
+                    <code class="language-cpp code" >
+                        #ifndef PhoneDetector_h
+                        #define PhoneDetector_h
+
+                        #include <Arduino.h>
+                        #include "StudyTimer.h"
+
+                        class PhoneDetector{
+                        private:
+                            bool procrastinating;
+                            int phonePin; 
+                        public:
+                            PhoneDetector(int pin);
+                            bool detect();
+                            void signal(bool procrastinating);      
+                        };
+
+                        #endif
+                    </code>
+                </pre> 
+            </div>
+            <div class="tab-pane fade" id="nav-phonedetector-cpp" role="tabpanel" aria-labelledby="nav-phonedetector-cpp-tab">
+                <pre class="prettyprint pre" >
+                    <code class="language-cpp code" >
+                        #include "PhoneDetector.h";
+                        #include "StudyTimer.h";
+
+                        PhoneDetector::PhoneDetector(int pin){
+                        this->phonePin = pin;
+                        procrastinating = false;
+                        pinMode(this->phonePin, INPUT);
+                        }
+
+                        // Return true if phone is on charger false otherwise 
+                        bool PhoneDetector::detect(){
+                        int sample = 0;
+                        int SAMPLE_SIZE = 350;
+                        for(int i = 0; i < SAMPLE_SIZE; i++){
+                            sample += analogRead(phonePin);
+                        }
+                        // Serial.println((sample / SAMPLE_SIZE));
+                        return (sample / SAMPLE_SIZE) < 7000;
+
+                        }
+
+                        void PhoneDetector::signal(bool procrastinating){
+                        Serial.println(procrastinating ? "this person is procrastinating" : "this person is no longer procrastinating");
+                        }
+                    </code>
+                </pre> 
+            </div>
+            <div class="tab-pane fade" id="nav-timeinterface-h" role="tabpanel" aria-labelledby="nav-timeinterface-h-tab">
+                <pre class="prettyprint pre" >
+                    <code class="language-cpp code" >
+                        #ifndef TimeInterface_h
+                        #define TimeInterface_h
+
+
+                        #include <Arduino.h>
+
+                        class TimeInterface{
+                        private:
+                            int studyDuration;
+                            int relaxDuration;
+                            int rounds;
+                            int timeUnits;
+                        public:
+                            TimeInterface();
+                            void setTime(bool up, bool isStudy);
+                            void changeUnits(bool left);
+                            void setRounds(bool up);
+                            String printTime(int seconds);
+                            int getRounds();
+                            int getStudyDuration();
+                            int getRelaxDuration();
+                        };
+
+                        #endif 
+                    </code>
+                </pre> 
+            </div>
+            <div class="tab-pane fade" id="nav-timeinterface-cpp" role="tabpanel" aria-labelledby="nav-timeinterface-cpp-tab">
+                <pre class="prettyprint pre" >
+                    <code class="language-cpp code" >
+                        #include "TimeInterface.h";
+                        TimeInterface::TimeInterface(){
+                        timeUnits = 0;
+                        studyDuration = 15;
+                        relaxDuration = 15;
+                        rounds = 1;
+                        }
+
+                        void TimeInterface::setTime(bool up, bool isStudy){
+                        int *time = isStudy ? &studyDuration : &relaxDuration;
+                        if(up && *time < 3600 - timeUnits){
+                            *time += timeUnits;
+                        }
+                        else if(!up && *time > 0 + timeUnits + 15){
+                            *time -= timeUnits;
+                        }
+                        }
+
+                        void TimeInterface::changeUnits(bool left){
+                        if (left){
+                            timeUnits = 1;
+                        }
+                        else{
+                            timeUnits = 60;
+                        }
+                        }
+
+                        void TimeInterface::setRounds(bool up){
+                        if (up && rounds < 10){
+                            rounds += 1;
+                        }
+                        else if(!up && rounds > 1){
+                            rounds -= 1;
+                        }
+                        }
+
+                        String TimeInterface::printTime(int seconds){
+                        int minutes = seconds / 60;
+                        seconds = seconds % 60;
+
+                        String formattedTime = String(minutes < 10 ? "0" : "") + String(minutes) + ":"+ String(seconds < 10 ? "0" : "") + String(seconds);
+
+                        return formattedTime;
+                        }
+
+                        int TimeInterface::getRounds(){
+                        return rounds;  
+                        }
+
+                        int TimeInterface::getStudyDuration(){
+                        return studyDuration;  
+                        }
+
+                        int TimeInterface::getRelaxDuration(){
+                        return relaxDuration;  
+                        }
+
+                    </code>
+                </pre> 
+            </div>
+            <div class="tab-pane fade" id="nav-rotaryencoder-ino" role="tabpanel" aria-labelledby="nav-rotaryencoder-ino-tab">
+                <pre class="prettyprint pre" >
+                    <code class="language-cpp code" >
+                        void rotary_onButtonClick()
+                        {
+                            static unsigned long lastTimePressed = 0; // Soft debouncing
+                            if (millis() - lastTimePressed < 500)
+                            {
+                                    return;
+                            }
+                            lastTimePressed = millis();
+                            Serial.print("button pressed ");
+                            Serial.print(millis());
+                            Serial.println(" milliseconds after restart");
+                        }
+
+                        int rotary_loop()
+                        {
+                            //dont print anything unless value changed
+                            if (rotaryEncoder.encoderChanged())
+                            {
+                                    int val = rotaryEncoder.readEncoder();
+                                    Serial.print("Value: ");
+                                    Serial.println(val);
+                                    return val;
+                            }
+                            if (rotaryEncoder.isEncoderButtonClicked())
+                            {
+                                    rotary_onButtonClick();
+                                    return -2;
+                            }
+                            return -1;
+                        }
+
+                        void IRAM_ATTR readEncoderISR()
+                        {
+                            rotaryEncoder.readEncoder_ISR();
+                        }
+
+                    </code>
+                </pre> 
+            </div>
+            <div class="tab-pane fade" id="nav-inputscreens-ino" role="tabpanel" aria-labelledby="nav-inputscreens-ino-tab">
+                <pre class="prettyprint pre" >
+                    <code class="language-cpp code" >
+                        #include "Arduino.h"
+                        #include "Time.h"
+
+
+                        int rounds = 1;
+
+                        void setTime(bool up, struct time &currTime, bool seconds){
+                        if (seconds){
+                            if (up && currTime.seconds < 59){
+                            currTime.seconds += 1;
+                            }
+                            else if(!up && currTime.seconds > 0){
+                            currTime.seconds -= 1;
+                            }
+                        }
+                        else{
+                            if (up && currTime.minutes < 59){
+                            currTime.minutes += 1;
+                            }
+                            else if (!up && currTime.minutes > 0){
+                            currTime.minutes -= 1;
+                            }
+                        }
+                        }
+
+                        void setRounds(bool up){
+                        if (up && rounds < 10){
+                            rounds += 1;
+                        }
+                        else if(!up && rounds > 1){
+                            rounds -= 1;
+                        }
+                        }
+
+                        String printTime(int seconds, int minutes){
+                        String formattedTime = String(minutes < 10 ? "0" : "") + String(minutes) + ":"+ String(seconds < 10 ? "0" : "") + String(seconds);
+                        return formattedTime;
+                        }
+
+
+
+
+
+                    </code>
+                </pre> 
+            </div>
+            <div class="tab-pane fade" id="nav-time-h" role="tabpanel" aria-labelledby="nav-time-h-tab">
+                <pre class="prettyprint pre" >
+                    <code class="language-cpp code" >
+                        #ifndef Time_h
+                        #define Time_h
+
+                        struct time{
+                        int minutes;
+                        int seconds;
+                        };
+
+                        #endif
+                    </code>
+                </pre> 
+            </div> 
+            </div>
+            <h3>ESP32 Code: Reading From MicroSD and Playing on Speaker</h3>
+            <pre class="prettyprint pre">
+                <code class="language-cpp code">
+                    #include <SD.h>
+                    #include "Insult.h"
+                    #include "XT_DAC_Audio.h"
+                    #include <esp_now.h>
+                    #include <WiFi.h>
+                    
+                    unsigned char sound[16260];
+                    bool done = false;
+                    
+                    XT_Wav_Class *test;
+                    // XT_Wav_Class Sound(rawData);  
+                    unsigned char temp[2] = {0,0}  ; 
+                    XT_Wav_Class Sound(temp);  
+                                                            
+                    XT_DAC_Audio_Class DacAudio(25,0);    
+                    
+                    uint32_t DemoCounter=0;   
+                    
+                    bool playSound = false;
+                    
+                    
+                    
+                    void setup() {
+                        Serial.begin(115200); 
+                        //Set device in AP mode to begin with  
+                    }
+                    
+                    void loop() {
+                        if (Serial.available() > 0) {
+                            // Read the data from Serial
+                            String data = Serial.readStringUntil('\n');
+                    
+                            // Process the received data
+                            // Example: Print the received data
+                            Serial.print("Received data: ");
+                            Serial.println(data);
+                            playSound = data.equals("1");
+                        }
+                        if(!done){
+                            if(!SD.begin()){
+                                Serial.println("Card Mount Failed");
+                                return;
+                            }
+                            uint8_t cardType = SD.cardType();
+                    
+                            if(cardType == CARD_NONE){
+                                Serial.println("No SD card attached");
+                                return;
+                            }
+                    
+                            uint64_t cardSize = SD.cardSize() / (1024 * 1024);
+                            File file = SD.open("/Insult.h");
+                            if(!file){
+                                Serial.println("Failed to open file for reading");
+                                return;
+                            }
+                            // Serial.print("Read from file: ");
+                            // int x = 0;
+                            unsigned char temp[1];
+                            temp[0] = '1';
+                            unsigned char buf[2];
+                            char newBuf[2];
+                            while((char) file.read() != '{'){
+                            }
+                            int index = 0;
+                            while(file.available()){
+                                while(temp[0] != '0' && file.available()){
+                                file.read(temp, 1);
+                                }
+                                if (!file.available()){
+                                break;
+                                }
+                                file.read(temp, 1);
+                                file.read(buf, 2);
+                                // Serial.println(((String) (char) buf[0]) +((String) (char) buf[1]));
+                                newBuf[0] = (char) buf[0];
+                                newBuf[1] = (char) buf[1];
+                                unsigned long value = strtoul(newBuf, NULL, 16);  // Convert the hexadecimal string to unsigned long
+                                sound[index] = static_cast<unsigned char>(value);  // Cast the value to unsigned char
+                                // Serial.println(index);
+                                index++;
+                                // Serial.println(sound[index]);
+                                // Serial.write(file.read());
+                                // x++;
+                                // if (x == 100){
+                                //   break;
+                                // }
+                            }
+                            // Serial.println("Before Close");
+                            file.close();
+                            Sound = XT_Wav_Class(sound);
+                            test = &Sound;
+                            // Serial.println("Got Sound");
+                            done = true;
+                        }
+                        else{
+                        // Serial.println("inside else ");
+                        DacAudio.FillBuffer();                
+                        if((*test).Playing==false && playSound){
+                            DacAudio.Play(test); 
+                        }       
+                        // Serial.println(DemoCounter++); 
+                        }
+                        
+                                
+                    }
+                </code>
+            </pre>  
+            <h3>Communication between ESP32s</h3>
+            <pre class="prettyprint pre">
+                <code class="language-python code">
+                    import serial
+                    # Define the serial port and baud rate
+                    port = '/dev/cu.usbserial-14230'  # Replace with your ESP32's serial port
+                    port2 = '/dev/cu.usbserial-0001'  # Replace with your ESP32's serial port
+                    baud_rate = 115200  # Match the baud rate with your ESP32's configuration
+
+                    # Create a serial object
+                    ser = serial.Serial(port, baud_rate)
+                    ser2 = serial.Serial(port2, baud_rate)
+
+                    # Check if the serial port is open
+                    if ser.is_open:
+                        print(f"Serial communication established on {port}.")
+                    if ser2.is_open:
+                        print(f"Serial communication established on {port2}.")
+
+                    try:
+                        while True:
+                            # Read data from the serial port
+                            data = ser.readline().decode().strip()
+                            
+                            # Print the received data
+                            print(f"Received data: {data}")
+                            if data and data in ["1", "0"]:
+                                # Send data to the ESP32
+                                # message = input("Enter a message to send: ")
+                                ser2.write(data.encode())
+                            
+                            data = None
+                            
+                    except KeyboardInterrupt:
+                        # Close the serial port when the program is terminated
+                        ser.close()
+                        print("Serial communication closed.")
+
+                </code>
+              </pre>  
+        </div>      
+    </div>
