@@ -144,12 +144,32 @@
                 readings to get a reading close to 2.5V.
             </p>
             <h2>Wireless Charger and Speaker Setup</h2>
-
+            <p>
+                For this week I wanted to prepare myself for workign with speakers for my final project. In order to also prepare for the final project I also
+                wanted to work with the wireless charger as I stated above. So I attached the charger to pin 34 so I can analogRead the voltage from the charger, and I have 
+                the speaker hooked up to 5V, ground, and pin 25 because pin 25 is the ESP32's built in DAC (digital to audio converter which is the only pin that can actually
+                drive the speaker)
+            </p>
             <img src = "week7Assets/speaker-charger-setup.jpg"></img>
+            <h4>Test Video (Sound On)</h4>
             <video  style="width:50vw;" controls>
                 <source src = "week7Assets/output-demo.mp4", type="video/mp4">
                 Your browser does not support the video tag.
             </video>
+            <h2>Phone Detector and Speaker Code</h2>
+            <p> 
+                I wanted to use C++ class structure for the Phone Detecting part of the code
+                to better set myself up for the final project. The main functionality of the PhoneDetector
+                class being the function detect which detects if a phone is on the charger and it does this by
+                calling analogRead on the pin the wireless charger is attached a few hundred times, and averaging those 
+                results and if those results are below a certain threshold then a phone is on the charger. 
+            </p>
+            <p>
+                For the speaker, I used the XT_DAC_Audio library, which requires sound to be an array of hexadecimal numbers, 
+                and in order to get your own audio in the right format you need a software that is only available for windows.
+                So for this week I just used the default audio example that they provided.
+            </p>
+            <p>Phone Detector and Speaker Code Below:</p>
             <h3>Main.ino</h3>
             <pre class="prettyprint pre" >
                 <code class="language-cpp code" >

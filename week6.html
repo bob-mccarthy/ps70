@@ -108,11 +108,22 @@
         </div>
         <div class="main-content">
         <h1> Week 6: Input Devices </h1>
-        <h2> Capactive Sensor: Liquid Volume Sensor</h2>
+        <h2> Capacitive Sensor: Liquid Volume Sensor</h2>
+        <p>
+          Originally I had tried to implement a weight sensor, but the sensor would only read non garbage values (values that did not wildly fluctuate)
+          when the two pads were touching. So I decided to switch over to try and creating a liquid Volume Sensor
+        </p>
         <div>
           <img src = "week6Assets/sensor-pic.jpg" style="max-height: 400px;"> </img>
           <img src = "week6Assets/all-electronics-pic.jpg" style="max-height: 400px;"> </img>
         </div>
+        <p>
+          How the volume sensor works it you have ot cooper plates on opposite sides of a container (they do not need to be on opposite sides just no touching). 
+          Then you have one plate hooked up to ground and the other hooked up to a pin to analogRead from (A3). You then pass current through the plates via a 
+          tx pin (4), and see the difference between current you when sending current vs not sending current through the tx pin, as the volume of water changes
+          so does the current passing through the plates which means that if you properly calibrate your sensor you can determine the volume of water in a container
+          by the current you read from your sensor.
+        </p>
         <h3>Materials</h3>   
         <ul class="materials">
           <li>
@@ -208,6 +219,12 @@
           to positive 
         </p>
         <h2>Distance Based Laptop Volume Control</h2>
+        <p>
+          For the other sensor I chose to use an ultrasonic sensor, if I am being completely honest, because it looked like it had a pair of
+          binoculars on. However, measure distance also seemed like it had a lot of potential for a project. One of the first ideas I had was
+          that when you are farther away from your computer you want it to be louder and when you are closer you want it to be quieter. So I thought
+          of making a robot that controlled the volume on your laptop by how close you are to it.
+        </p>
         <video  height="400" controls>
           <source src = "week6Assets/volume-video.mp4", type="video/mp4">
           Your browser does not support the video tag.
@@ -227,6 +244,13 @@
             Laptop
           </li>
         </ul>
+        <p>
+          The code works by finding the distance of the closest object to the sensor and relaying that information.
+          It then takes that the number given by the sensor and maps it to a number between 0 and 75 (I chose the mapping
+          I did by just playing around with it and finding what mapping was not took loud, or increase in volume to quickly
+          or slowly)
+        </p>
+        <h4>ultrasonicSensor.ino</h4>
         <pre class="prettyprint pre" >
           <code class="language-cpp code" >
             const int pingPin = 7; // Trigger Pin of Ultrasonic Sensor
@@ -261,6 +285,40 @@
             }
           </code>
       </pre>  
+      <h4>changingVolume.py</h4>
+      <pre class="prettyprint pre" >
+        <code class="language-cpp code" >
+          import osascript
+          import serial
+
+          port = '/dev/cu.usbmodem142201'  # Replace with your ESP32's serial port
+          ser = serial.Serial(port, 9600)
+          data = '10'
+
+          if ser.is_open:
+              print(f"Serial communication established on {port}.")
+
+          try:
+              while True:
+                  # Read data from the serial port
+                  while ser.in_waiting > 0:
+                      data = ser.readline().decode().strip()
+
+
+                  
+                  # Print the received data
+                  print(f"Received data: {data}")
+                  # print(f"output: {100/max(min(int(data)*4, 100),1)}")
+                  osascript.osascript(f"set volume output volume {min(int(data)*8, 75)}")
+                  
+          except KeyboardInterrupt:
+              # Close the serial port when the program is terminated
+              ser.close()
+              print("Serial communication closed.")
+
+
+        </code>
+      </pre>
       <h4>Calibration:</h4>
       <img src = "week6Assets/distance-calibration.png"> </img>
       <p>
