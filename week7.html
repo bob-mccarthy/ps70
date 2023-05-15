@@ -112,10 +112,16 @@
         </div>
         <div class="main-content">
             <h1>Week 7: Output Devices</h1>
-            <video  style="width:50vw;" controls>
-                <source src = "week7Assets/output-demo.mp4", type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            
+            <h3>Oscilloscope</h3>
+            <p>
+                Using an Oscilloscope was actually very helpful for this week because I had run into an issue 
+                with the wireless charger I was planning on using for my final project. The main issue being that 
+                when I used a multimeter and measure a specific pin on the wireless charger it read 5V when there 
+                was no phone on it, and 2.5V when a phone was on it and being charged. However, when I hooked it up 
+                to my ESP32S2 I was getting widely different results when I used analogRead on the pin with values varing between 0 and 5 volts.
+                So I wanted to look at the oscilloscope to get a better sense of what was going on with the voltage output by the wireless charger.
+            </p>
             <div style = "display: flex;">
                 <div>
                     <h3>Reading when Phone is not on Charger</h3>
@@ -126,6 +132,24 @@
                     <img src = "week7Assets/scope-with-phone.jpg"></img>
                 </div>
             </div>
+            <p>
+                From the oscilloscope, I see that when the charger is not charging a phone it outputs a consistent voltage which makes sense with the 5V that
+                I read on the multimeter. However, when you put the phone on the wireless charger there is a fluctation in the voltage by 5 Volts (fluctuating
+                between 5 and 0 at an interval of about every 0.3 milliseconds or 300 microseconds). This reading help me understand the problems I was having 
+                with reading the voltage on my ESP32S2. At first the multimeter gave me the impression that when the phone is on the charger, that the pin I was measure
+                goes from outputting a consistent 5V to a consistent 2.5V. However, that is not what it does, it fluctutates between 5 and 0 volts, and I am guessing
+                that the amount of sampling the multimeter is much higher than what the ESP32 does when it calls analogRead and because of that the multimeter produces a 
+                of 2.5V because it takes a lot of samples and the average of 5 and 0 is 2.5. While when the ESP32 calls analogRead it returns a value much closer
+                to 5 or 0. And if I want to solve this problem myself then I will have to implement sampling on my own, and call analogRead multiple times and average those
+                readings to get a reading close to 2.5V.
+            </p>
+            <h2>Wireless Charger and Speaker Setup</h2>
+
+            <img src = "week7Assets/speaker-charger-setup.jpg"></img>
+            <video  style="width:50vw;" controls>
+                <source src = "week7Assets/output-demo.mp4", type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
             <h3>Main.ino</h3>
             <pre class="prettyprint pre" >
                 <code class="language-cpp code" >
