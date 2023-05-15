@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 1</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/src/prettify.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/src/prettify.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre code').forEach((el) => {
+          hljs.highlightElement(el);
+        });
+      });</script>
+    <link rel="stylesheet" href="https://pygments.org/static/css/default.css">
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS70 Bobby</title>
+    
+    <link rel = "stylesheet" href = "styles.css">
+    <script>
+        function navigate() {
+            var selectElement = document.getElementById("pageSelect");
+            var selectedValue = selectElement.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+    <script>
+      window.onload = function() {
+          PR.prettyPrint();
+      };
+  </script>
+</head>
+<body>
+    <div class = "navbar">
+        <img src = "py-logo.svg" alt = "python logo"></img>
+        <a href = "index.html" style = "text-decoration: none; font-size: 14px;">Phys-Sci »</a>
+        <select style="width: 7%;">
+            <option> English </option>
+            <option disabled> I don't know other languages :(</option>
+        </select>
+        <select style="width: 6%;" id="pageSelect" onchange="navigate()">
+            <option value = "index.html"> Home Page</option>
+            <option value = "week1.html"> Week 1</option>
+            <option value = "week2.html"> Week 2</option>
+            <option value = "week3.html"> Week 3</option>
+            <option value = "week4.html"> Week 4</option>
+            <option value = "week5.html"> Week 5</option>
+            <option value = "week6.html"> Week 6</option>
+            <option value = "week7.html"> Week 7</option>
+            <option value = "week8.html"> Week 8</option>
+            <option value = "https://ctian5136.github.io/ps70/html/weeks/week9.html"> Week 9</option>
+            <option value = "https://geometrikz.github.io/PS70/blog/week_10/"> Week 10</option>
+            <option value = "finalProject.html"> Final Project</option>
+        </select>
+        <p>70.0.1 Documentation »</p>
+    </div>
+    <div class = "grid">
+        <div class = "sidenav">
+            <p>Download</p>
+            <p>Docs by Week</p>
+            <ul class = "weekLinks">
+                <li>
+                    <a href = "week1.html"> Week 1: Intro</a>
+                </li>
+                <li>
+                    <a href = "week2.html"> Week 2: 2D Design</a>
+                </li>
+                <li>
+                    <a href = "week3.html"> Week 3: Hand tools</a>
+                </li>
+                <li>
+                    <a href = "week4.html"> Week 4: Microcontrollers</a>
+                </li>
+                <li>
+                    <a href = "week5.html"> Week 5: 3D Design</a>
+                </li>
+                <li>
+                    <a href = "week6.html"> Week 6: Input Devices</a>
+                </li>
+                <li>
+                    <a href = "week7.html"> Week 7: Output Devices</a>
+                </li>
+                <li>
+                    <a href = "week8.html"> Week 8: Mill, Mold & Cast</a>
+                </li>
+                <li>
+                    <a href = "https://ctian5136.github.io/ps70/html/weeks/week9.html"> Week 9: Internet of Things</a>
+                </li>
+                <li>
+                    <a href = "https://geometrikz.github.io/PS70/blog/week_10/"> Week 10: Machine Building</a>
+                </li>
+                <li>
+                    <a href = "finalProject.html"> Final Project: Insult Robot</a>
+                </li>
+            </ul>      
+        </div>
+        <div class="main-content">
+            <h1>Week 3: Kinetic Scupltures</h1>
+            <h2>A Robot that Answers Lifes Hardest Questions</h2>
+            <p>
+                I wanted to take another attempt at making a kinetic sculpture with all of the skills I had learned to far in PS70.
+                Since I have had to ask so many questions over the course of this class I wanted to make a sculpture that would answer all
+                of my questions. Which is my I made the .....
+            </p>
+            <h2>Yes No Board</h2>
+            <video  style="width:50vw;" controls>
+                <source src = "week3Assets/yes-no-demo.mp4", type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p>
+                The basic idea of how I assembled this together is I made motor mount and press fit motor attachment 
+                to attach the motor to the arrow and then attach to the motor to the yes no board. Below are the 3D
+                printed attachments. The press fit attachment allows me to screw the arrow onto the motor, and the motor mount allows
+                me to screw the motor onto the yes no board
+            </p>
+            <div style="display: flex">
+                <img src = "week3Assets/motor-mount.jpg" ></img>
+                <img  src = "week3Assets/pressfit-motor.jpg"></img>
+            </div>
+            <p>
+                Then after the attachments were printed I attached the motor to the arrow and the board 
+            </p>
+            <div style="display: flex">
+                <img src = "week3Assets/motor-arrow.jpg" ></img>
+                <img  src = "week3Assets/board-side-view.jpg"></img>
+            </div>
+            <p>
+                Then after giving the board some legs and atatching it to the board, I just needed to
+                hook it up the arduino to get it working. With this arduino it is just listening for a button press
+                and once it is pressed it spins a random number of milliseconds between 500 and 3000. Wiring and code below.
+            </p>
+            <img src = "week3Assets/yes-no-wiring.jpg"></img>
+            <pre class="prettyprint" style = "border: none; width: 100%;  ">
+                <code class="language-cpp" style = "border-style: solid; border-color: green;background-color: #edfecc;">
+                    const int A1A = 3;  // define pin 3 for A-1A 
+                    const int A1B = 4;  // define pin 4 for A-1B 
+
+                    int buttonState = 0;
+
+                    void setup() {
+                    Serial.begin(9600);
+                    pinMode(A1A, OUTPUT);     // specify these pins as outputs
+                    pinMode(A1B, OUTPUT);
+                    pinMode(2, INPUT);
+                    digitalWrite(A1A, LOW);   // start with the motors off 
+                    digitalWrite(A1B, LOW);
+                    }
+
+                    void loop() {
+                    buttonState = digitalRead(2);
+                    // Serial.println(buttonState);
+                    if(buttonState == HIGH){
+                        digitalWrite(A1A, HIGH);   
+                        digitalWrite(A1B, LOW);
+                        delay(random(500,3000));  
+                        digitalWrite(A1A, LOW);  
+                        digitalWrite(A1B, LOW);
+                    }
+
+
+                    }
+                </code>
+              </pre>  
+        </div>      
+    </div>
