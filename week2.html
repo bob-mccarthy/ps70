@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/google/code-prettify@master/src/prettify.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/src/prettify.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre code').forEach((el) => {
+          hljs.highlightElement(el);
+        });
+      });</script>
+    <link rel="stylesheet" href="https://pygments.org/static/css/default.css">
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PS70 Bobby</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <script>
+        function navigate() {
+            var selectElement = document.getElementById("pageSelect");
+            var selectedValue = selectElement.value;
+            if (selectedValue) {
+                window.location.href = selectedValue;
+            }
+        }
+    </script>
+    <script>
+      window.onload = function() {
+          PR.prettyPrint();
+      };
+  </script>
+</head>
+<body>
+    <div class = "navbar">
+        <img src = "py-logo.svg" alt = "python logo"></img>
+        <a href = "index.html" style = "text-decoration: none; font-size: 14px;">Phys-Sci »</a>
+        <select style="width: 7%;">
+            <option> English </option>
+            <option disabled> I don't know other languages :(</option>
+        </select>
+        <select style="width: 6%;" id="pageSelect" onchange="navigate()">
+            <option value = "index.html"> Home Page</option>
+            <option value = "week1.html"> Week 1</option>
+            <option value = "week2.html"> Week 2</option>
+            <option value = "week3.html"> Week 3</option>
+            <option value = "week4.html"> Week 4</option>
+            <option value = "week5.html"> Week 5</option>
+            <option value = "week6.html"> Week 6</option>
+            <option value = "week7.html"> Week 7</option>
+            <option value = "week8.html"> Week 8</option>
+            <option value = "https://ctian5136.github.io/ps70/html/weeks/week9.html"> Week 9</option>
+            <option value = "https://geometrikz.github.io/PS70/blog/week_10/"> Week 10</option>
+            <option value = "finalProject.html"> Final Project</option>
+        </select>
+        <p>70.0.1 Documentation »</p>
+    </div>
+    <div class = "grid">
+        <div class = "sidenav">
+            <p>Download</p>
+            <p>Docs by Week</p>
+            <ul class = "weekLinks">
+                <li>
+                    <a href = "week1.html"> Week 1: Intro</a>
+                </li>
+                <li>
+                    <a href = "week2.html"> Week 2: 2D Design</a>
+                </li>
+                <li>
+                    <a href = "week3.html"> Week 3: Hand tools</a>
+                </li>
+                <li>
+                    <a href = "week4.html"> Week 4: Microcontrollers</a>
+                </li>
+                <li>
+                    <a href = "week5.html"> Week 5: 3D Design</a>
+                </li>
+                <li>
+                    <a href = "week6.html"> Week 6: Input Devices</a>
+                </li>
+                <li>
+                    <a href = "week7.html"> Week 7: Output Devices</a>
+                </li>
+                <li>
+                    <a href = "week8.html"> Week 8: Mill, Mold & Cast</a>
+                </li>
+                <li>
+                    <a href = "https://ctian5136.github.io/ps70/html/weeks/week9.html"> Week 9: Internet of Things</a>
+                </li>
+                <li>
+                    <a href = "https://geometrikz.github.io/PS70/blog/week_10/"> Week 10: Machine Building</a>
+                </li>
+                <li>
+                    <a href = "finalProject.html"> Final Project: Insult Robot</a>
+                </li>
+            </ul>      
+        </div>
+        <h3>Sorry but I am completely overhauling the website, so this page has not been updated yet, but all the pages after the midterm are up to date</h3>
+        <h4>Did not realize how long it was going to take me to redesign everything</h4>     
+    </div>
