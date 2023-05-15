@@ -59,6 +59,29 @@ a:hover{
 
 }
 
+.navbar-final{
+    border-bottom: 2px solid lightgray;
+    padding: 5px; 
+    padding-top: 10px;
+    padding-bottom: 12px;
+}
+
+.navbar-final img{
+    padding-top: 2px;
+}
+
+.navbar-final * {
+    display: inline;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.navbar-final p {
+    color: #181818;
+    font-size: 14px;
+
+}
+
 .grid {
     display: grid;
     columns: 3;
@@ -118,7 +141,7 @@ a:hover{
     margin-top: -10px;
 }
 
-.main-content {
+.main-content-bob {
     margin-left: 40px;
 }
 
