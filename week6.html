@@ -196,6 +196,17 @@
         </pre>  
         <h4>Calibration:</h4>
         <img src = "week6Assets/capacitive-calibration.png"> </img>
+        <p>
+          After measuring the voltage reported by the capactive sensor compared to the ml of water 
+          in the container the coefficient of the line of best fit was -58.99,
+          so for every ml increase in the container the voltage reading by the capactive sensor drops by -58.99 . 
+          With the intercept being 38455. 
+        </p>
+        <p>
+          However, one thing to note is that as I was calibrating my sensor any reading before 200 ml was giving readings with negative 
+          values and then after 200 ml the readings from the sensor became positive, but I do not know why the readings flip from negative 
+          to positive 
+        </p>
         <h2>Distance Based Laptop Volume Control</h2>
         <video  height="400" controls>
           <source src = "week6Assets/volume-video.mp4", type="video/mp4">
@@ -251,7 +262,12 @@
           </code>
       </pre>  
       <h4>Calibration:</h4>
-      <img src = "week6Assets/capacitive-calibration.png"> </img>
-      
+      <img src = "week6Assets/distance-calibration.png"> </img>
+      <p>
+        After measuring the microseconds reported by the ultrasonic sensor compared to the number 
+        of inches away from the ultrasonic sensor the coefficient of the line of best fit was 149,
+        so for every inch increase in distance from the closest object to the center it takes 149
+        additional microseconds to reach the sensor. With the intercept being 3.6 microseconds. 
+      </p>
     </div>
     </div>
